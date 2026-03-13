@@ -1,2 +1,50 @@
-# sakura-board-craft
-Design your own keyboard films! Features AI parsing, custom programmable key libraries, and a pink UI.
+🌸 Sakura Board Craft (樱色键盘工坊)
+
+Sakura Board Craft 是一个专为键盘膜定制而生的高级 Web 设计工具。它拥有唯美的“魔法少女小樱”粉色主题 UI，同时具备 AI 辅助识别、图层拖拽、CSS 级精细控制以及完善的快捷键支持。
+
+✨ 核心特性 (Features)
+
+🤖 AI 辅助底图解析：支持上传真实键盘底图，通过 AI 功能一键生成预设按键刀图。支持底图的一键显隐，方便与刀图进行精确对比。
+
+🎛️ 按键自由定制：每个按键支持独立的拖拽、缩放（支持联动等比缩放），可自由上传按键独立贴图。
+
+📚 可编程按键字库：内置多种标准按键预设（1U, 1.25U, 空格, 回车等）。支持用户自行新增分组、修改预设尺寸，并且按键库支持独立的 JSON 导入与导出。
+
+🎨 智能背景与漏白检测：支持多图层键盘膜背景（纯色、渐变色 linear-gradient、图片叠加）。背景在拖拽时支持智能边缘吸附。在导出配置前，系统会自动检测刀图是否被背景完全覆盖，预防边缘漏白。
+
+💾 工程文件流转：支持将当前的画布设计导出为 .json 配置文件，并随时导入还原设计现场。
+
+🖱️ 高阶画布交互：所有元素（按键、背景）均支持鼠标拖拽，支持键盘方向键微调（按住 Shift 加速），支持右侧面板输入精确数字调节。
+
+💅 CSS 级样式引擎：支持使用调色盘精确选取边框和背景颜色；上传图片时，支持 CSS 原生的 cover, contain, 100% 100% 缩放模式以及 9 宫格位置对齐。
+
+⌨️ 标准快捷键支持：遵循 Windows 标准体验，支持 Ctrl+C (复制)、Ctrl+V (粘贴)、Ctrl+X (剪切)、Delete (删除)、Ctrl+Z (撤销)、Ctrl+Y (重做)。
+
+🗜️ 折叠式工作台：右侧配备专业的沉浸式属性控制面板，支持随时收起以最大化预览画布。
+
+ℹ️ 贴心的新手引导：顶部导航栏内置悬浮式功能简介，帮助新用户快速上手。
+
+🌸 樱色主题设计：全站采用精心调配的粉色系渐变、毛玻璃效果与柔和阴影，还原魔法少女般的浪漫体验。
+
+🚀 快速开始 (Quick Start)
+
+本项目为单文件 React 应用（包含所有组件、状态与样式），开箱即用。
+
+克隆仓库：
+
+git clone [https://github.com/your-username/sakura-board-craft.git](https://github.com/your-username/sakura-board-craft.git)
+
+
+引入你的 React 环境中直接运行 App.jsx 即可。
+
+🛠️ 技术栈 (Tech Stack)
+
+框架: React 18 (Hooks)
+
+样式: Tailwind CSS
+
+图标: Lucide React
+
+状态管理: 纯函数式单向数据流 + 本地 History 栈 (用于撤销/重做)
+
+Made with 💖 for Keyboard Customization.
